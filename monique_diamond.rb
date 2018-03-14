@@ -17,9 +17,9 @@ class MoniqueDiamond
 	for row in 1..size do
 	  for col in 1..size - row do
 	    print " "
-	  end
-	for star in 1..row do
-	   print "* "
+	  end	
+          for star in 1..row do
+	  print "* "
 	  end
 	  puts "\n"
 	end
@@ -35,4 +35,3 @@ class MoniqueDiamond
 	  end
 	end
      end
-
