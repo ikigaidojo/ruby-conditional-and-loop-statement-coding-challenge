@@ -26,27 +26,27 @@ class FinnDiamond
 
     def print_diamond(times, size)
       steepness = 1
-      diamonds = 0
+      diamonds  = 0
       while diamonds < times do
        #counter that increses * prints to width and counter that prints decresing spaces until loop end
         width = 1
         space = size -1
         while width <= size do 
           print " " * space
-          space -= steepness
+          space     -= steepness
           puts "* " * width
-          width += steepness
+          width     += steepness
         end
         #counter that decreses * prints to 0 and counter that print incresing spaces until loop end
         width = size -1
         space = 1
         while width > 0 do
           print " " * space
-          space += steepness
+          space     += steepness
           puts "* " * width
-          width -= steepness
+          width     -= steepness
         end 
-        diamonds += 1
+        diamonds    += 1
       end 
     end # print_diamond end
      
