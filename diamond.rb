@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + "/diamond.rb"
+require File.dirname(__FILE__) + "/kate_diamond.rb"
 
 # this enable this ruby script to be run from the command output. Example - $> ruby diamond.rb
 if __FILE__ == $PROGRAM_NAME
@@ -12,4 +12,5 @@ class Diamond
 	def main
 		puts "Hello there..."
 	end
+
 end
