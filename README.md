@@ -9,7 +9,7 @@ character graphics with a size or width of 10.
 Enter the width of the diamond (Minimun value is 3, and Maximum value is 50): 10
 
 
-	     *
+	       *
         * *
        * * *
       * * * *
@@ -26,8 +26,8 @@ Enter the width of the diamond (Minimun value is 3, and Maximum value is 50): 10
      * * * * *
       * * * *
        * * *
-  		* *	
-  		 *
+  		  * *	
+  		   *
 
 
 Done.
