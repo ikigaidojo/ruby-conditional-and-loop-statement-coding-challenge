@@ -16,7 +16,7 @@ def main
 puts "How big is your diamond?"
 x = gets.chomp.to_i
 
-=begin one way
+#begin one way
 def nline(x, z)
   x-z.times { print " " } # whitespace loop
   x.times { print "*" + " " } #asterisk loop
@@ -38,24 +38,23 @@ until x == 0 # bottom half of diamond
   z += 1
   puts nline(x, z)
 end
-=end
+#end
 
-
-def diamond(x)
-  while x >= 0
-    print '-' * (x - 1)
-    puts '*' 
-    x -= 1
-  end
-=begin
-  if x != 0
-    print '-' * (x + 1)
-    x += 1
-  end until x == 0
-=end
+=begin another way
+1.upto(x) do |i|
+  i.upto(x - 1) { print " " }
+  i.times { print " *" }
+  print "\n"
 end
 
-diamond(x)
+x = x - 1
+
+x.downto(1) do |i|
+  i.upto(x) { print " " }
+  i.times { print " *" }
+  print "\n"
+end
+=end # another way
 
 # end arvin's code
 end
