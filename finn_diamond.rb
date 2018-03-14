@@ -15,7 +15,7 @@ class FinnDiamond
     puts "Enter the width of the diamond:"
     size = gets.chomp.to_i
 
-    # safety check for size
+    # safety check for extreme inputs 
     loop do      
     
       if size < 3 
