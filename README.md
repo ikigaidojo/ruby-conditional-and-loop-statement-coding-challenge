@@ -63,6 +63,16 @@ Guidelines
 ```  	
  
  * place the code that you going to write into the **main** method. 
+
+ * after cloning the repo, from **develop** branch, create a new branch and give it a name of your 
+  first name. For example, given that I am currently in the **develop** branch and I create a new
+  branch called **ulysses**, when I do a git branch command from the terminal, I should see a list 
+  of git branches and one of them is named **ulysses**.
+
+
+
+
+
  
   	
 
