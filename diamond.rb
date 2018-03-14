@@ -13,5 +13,4 @@ class Diamond
 		puts "Hello there..."
 	end
 
-
 end
