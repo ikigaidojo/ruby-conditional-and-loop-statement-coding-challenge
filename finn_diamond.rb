@@ -8,16 +8,12 @@ end
 
 class FinnDiamond
 
-
-  #asks for diamond width, and then prints out a diamond
   def main
-  
     puts "Enter the width of the diamond:"
     size = gets.chomp.to_i
 
     # safety check for extreme inputs 
-    loop do      
-    
+    while true      
       if size < 3 
         puts "Minimun size is 3. Enter the width of the diamond:"
         size = gets.chomp.to_i
@@ -25,47 +21,38 @@ class FinnDiamond
         puts "Maximum size is 50. Enter the width of the diamond:"
         size = gets.chomp.to_i
       else break
-      end  
-        
-    end
-    flatness = 1
-    steepness = 1
-    spaces = size - flatness
+      end 
+    end 
 
-    #counter that increses * prints to width and counter that print decresing spaces until loop end
-    top_width = 1
-    top_space = size -1
-    
-    while top_width <= size do
-        
-      print " " * top_space
-      top_space -= steepness
+    def print_diamond(times, size)
+      steepness = 1
+      diamonds = 0
 
-      puts "* " * top_width
-      top_width += steepness
-    end
-    
-    
-    #counter that decreses * prints to 0 and counter that print incresing spaces until loop end
-    bottom_width = size -1
-    bottom_space = 1
-
-    while bottom_width > 0 do
-
-      print " " * bottom_space
-      bottom_space += steepness
-
-      puts "* " * bottom_width
-      bottom_width -= steepness
-    end
-
-  end
-  
-  
-
-
-
-
-
-
-end
+      while diamonds < times do
+       #counter that increses * prints to width and counter that prints decresing spaces until loop end
+        width = 1
+        space = size -1
+        while width <= size do 
+          print " " * space
+          space -= steepness
+          puts "* " * width
+          width += steepness
+        end
+        #counter that decreses * prints to 0 and counter that print incresing spaces until loop end
+        width = size -1
+        space = 1
+        while width > 0 do
+          print " " * space
+          space += steepness
+          puts "* " * width
+          width -= steepness
+        end 
+        diamonds += 1
+      end 
+    end # print_diamond end
+     
+     puts "How many diamonds:"
+     multiple = gets.chomp.to_i
+     print_diamond(multiple, size)
+  end # main end
+end #class FinnDiamond end
