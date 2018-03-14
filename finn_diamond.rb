@@ -1,5 +1,7 @@
 # finn diamond practice
-require File.dirname(__FILE__) + "/finn_diamond.rb"
+
+# telling ruby where to look for this file (file path)
+ file_path = require File.dirname(__FILE__) + "/finn_diamond.rb"
 
 # this enable this ruby script to be run from the command output. Example - $> ruby diamond.rb
 if __FILE__ == $PROGRAM_NAME
